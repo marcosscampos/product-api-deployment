@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+ 
+metadata:
+  name: product-api
+ 
+spec:
+  ingressClassName: kong
+  rules:
+  - host: product.bloco.live
+    http:
+      paths:
+      - backend:
+          service:
+            name: product-api
+            port:
+              number: 7001
+        path: /
+        pathType: Prefix
