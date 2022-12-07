@@ -20,8 +20,8 @@ spec:
         ports:
           - containerPort: 7001
         env:
-          - name: ConnectionStrings:MongoDb:Uri
+          - name: Uri
             value: mongodb://mongo-container:27017
             
-          - name: ConnectionStrings:MongoDb:DatabaseName
+          - name: DatabaseName
             value: PetFriends
