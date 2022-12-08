@@ -16,12 +16,6 @@ spec:
     spec:
       containers:
       - name: product-api
-        image: mirlock/product-api:latest
+        image: mirlock/product-api:221208.44c92f3
         ports:
           - containerPort: 7001
-        env:
-          - name: MongoDb_Uri
-            value: "mongodb://root:root@localhost:27017"
-            
-          - name: MongoDb_DatabaseName
-            value: "PetFriends"
