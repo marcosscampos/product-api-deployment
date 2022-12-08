@@ -20,8 +20,8 @@ spec:
         ports:
           - containerPort: 7001
         env:
-          - name: Uri
-            value: mongodb://mongo-container:27017
+          - name: MongoDb_Uri
+            value: "mongodb://root:root@localhost:27017"
             
-          - name: DatabaseName
-            value: PetFriends
+          - name: MongoDb_DatabaseName
+            value: "PetFriends"
