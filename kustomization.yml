@@ -7,4 +7,4 @@ resources:
 images:
   - name: product-api
     newName: mirlock/product-api
-    newTag: 221209.10eaf66
+    newTag: 221211.e1943e8
