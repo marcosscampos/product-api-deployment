@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: product-api
-        image: mirlock/product-api:221211.e1943e8
+        image: mirlock/product-api:221215.a5146ea
         ports:
           - containerPort: 7001
